@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/nav_savings"
+        android:icon="@drawable/baseline_savings_24"
+        android:title="@string/savings" />
+    <item
+        android:id="@+id/nav_wallet"
+        android:icon="@drawable/baseline_account_balance_wallet_24"
+        android:title="@string/wallet" />
+    <item
+        android:id="@+id/nav_loans"
+        android:icon="@drawable/baseline_loans"
+        android:title="@string/loans" />
+    <item
+        android:id="@+id/nav_reward"
+        android:icon="@drawable/baseline_star_24"
+        android:title="@string/reward" />
+
+</menu>

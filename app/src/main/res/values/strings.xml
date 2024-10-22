@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="double_loans">Double Loans</string>
+    <string name="home">Home</string>
+    <string name="savings">Savings</string>
+    <string name="wallet">Wallet</string>
+    <string name="loans">Loans</string>
+    <string name="reward">Reward</string>
+</resources>
