@@ -21,7 +21,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final int FLAG_DRAWS_SYSTEM_BAR_BACKROUNDS = 0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,8 +40,11 @@ public class MainActivity extends AppCompatActivity {
 
         //set default selection
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            private MenuItem item;
+
             @Override
             public boolean onNavigationItemSelected(MenuItem item) {
+                this.item = item;
                 int id = item.getItemId();
 
                 if (id == R.id.nav_home) {
@@ -70,11 +73,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            Window window = getWindow();
-            window.addFlags(FLAG_DRAWS_SYSTEM_BAR_BACKROUNDS);
-            window.setStatusBarColor(getResources().getColor(R.color.status_bar_color));
-        }
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+//            Window window = getWindow();
+//            window.addFlags(FLAG_DRAWS_SYSTEM_BAR_BACKROUNDS);
+//            window.setStatusBarColor(getResources().getColor(R.color.status_bar_color));
+//        }
 
 
     }
